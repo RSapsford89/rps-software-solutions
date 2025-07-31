@@ -10,7 +10,7 @@ body{
     width: 90%;
     margin:auto;
     padding: 20px;
-    background-color: #7681c5;
+    background-color: #a1bfaf;
 }
 h1,h2,h3{
     font-family: var(--title-font);
@@ -28,6 +28,7 @@ div{
     border: 2px red solid;
 }
 img{
+    height: auto;
     max-width: 300px;
 }
 .navbar{
@@ -35,10 +36,14 @@ img{
     margin: auto;
     justify-content: space-evenly;
 }
-.header div{
-    flex-flow: row;
-    justify-content: center;
-}
 .mainSection{
     display: flex;
+    flex-wrap: wrap;
+}
+.mainSection div{
+    /* flex-flow: row; */
+    max-width: 400px;
+}
+.mainSection button{
+    justify-self: center;
 }
