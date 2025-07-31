@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,700;1,300&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+/* google font import- Chakra Petch, Google Sans Code */
+
+:root{
+    --title-font: "Chakra Petch", sans-serif;
+    --content-font:"Google Sans Code", monospace;
+}
+body{
+    font-family: var(--content-font);
+    width: 90%;
+    margin:auto;
+    padding: 20px;
+    background-color: #7681c5;
+}
+h1,h2,h3{
+    font-family: var(--title-font);
+    
+}
+h1{
+    font-size: 40px;
+    justify-self: left;
+}
+h2{
+    font-size: 20px;
+    justify-self: center;
+}
+div{
+    border: 2px red solid;
+}
+img{
+    max-width: 300px;
+}
+.navbar{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.header div{
+    flex-flow: row;
+    justify-content: center;
+}
+.mainSection{
+    display: flex;
+}
