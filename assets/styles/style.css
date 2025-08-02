@@ -15,12 +15,15 @@ body{
     
 }
 h1{
-    font-size: 40px;
+    font-size: 20px;
     justify-self: left;
 }
 h2{
-    font-size: 20px;
+    font-size: 15px;
     justify-self: center;
+}
+h3{
+    font-size: 15px;
 }
 div{
     border: 2px red solid;
@@ -37,19 +40,31 @@ img{
     margin: auto;
     justify-content: space-evenly;
 }
-/* .mainSection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.circle{
+    border-radius: 50%;
 }
-.mainSection div{
-    justify-items: center;
-    
-    max-width: 400px;
+#imgPort{
+    height: 100%;
+    width: 175px;
 }
-.mainSection button{
-    justify-content: center;
-} */
+.lucy-skills-bg {
+    position: relative;
+}
+.lucy-skills-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/lego-lava.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Change this for image opacity */
+    z-index: 1;
+}
+.lucy-skills-bg > * {
+    position: relative;
+    z-index: 2;
+}
 /* using grid to have consistent columns where it will fit neatly
 Where grid-container is used, add 2 grid-items to get up to 2 rows of content */
 .grid-container{
@@ -71,6 +86,12 @@ Where grid-container is used, add 2 grid-items to get up to 2 rows of content */
 @media screen and (min-width: 800px) {
     body {
         font-size: medium;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
     }
 }
 

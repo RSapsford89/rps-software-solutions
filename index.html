@@ -33,7 +33,7 @@
             </div>
         </div>
     </header>
-    <section class="">
+    <section class="landingPage">
         <div class="titleDiv">
             <div>
                 <h1>RPS Web Solutions</h1>
@@ -58,6 +58,7 @@
                     touch to discuss more.
                 </p>
                 <div>
+                    <!-- this needs to open and form -->
                     <button type="button">Contact Me :-)</button>
                 </div>
             </div>
@@ -66,7 +67,7 @@
             <div class="grid-item">
                 <h2>How can I help?</h2>
                 <p id="secondaryText">
-                    Coming from a successful career in engineering, I transistioned to Full Stack Web Development 
+                    Coming from a successful career in engineering, I transistioned to Full Stack Web Development
                     for a more creative and engaging role. I can provide unique solutions to fulfil your needs.
                     See some example sites below.
                 </p>
@@ -74,14 +75,93 @@
             <div class="grid-item">
                 <img src="assets/images/city-and-bee.jpg" alt="Something sparkly and engineering focused">
             </div>
-            
         </div>
     </section>
+    <!-- Accordion section where each section shows an example of the type of site I could create -->
+    <section class="accordionSites">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        A professional portfolio?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center p-0">
+                        <div>
+                            <img src="assets/images/lucy_portfolio.webp" alt="Lego character Lucy portrait"
+                                class="circle mx-auto d-block" id="imgPort">
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12 col-md">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea quia dignissimos quos
+                                    harum,
+                                    sapiente est atque quam minus repudiandae consequatur ad quisquam reprehenderit rem
+                                    nostrum
+                                    tempora repudiandae. Delectus cum consectetur quibusdam temporibus praesentium odio
+                                    iusto?</p>
+                            </div>
+                            <div class="col-12 col-md lucy-skills-bg">
+                                <!-- Empty div for future content -->
+                                <h3 class=" mt-3">My Top Skills:</h3>
+                                <ul
+                                    class="list-unstyled d-flex flex-column justify-content-center align-items-center h-75">
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                    <li>HTML</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Django</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Last section for scripts to load... -->
     <!-- bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-         <!-- GSAP cdn -->
+    <!-- GSAP cdn -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="./assets/js/script.js"></script>
