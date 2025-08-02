@@ -25,8 +25,9 @@ h2{
 h3{
     font-size: 15px;
 }
+/* border used for debug to easily view div sizes */
 div{
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 img{
     height: auto;
