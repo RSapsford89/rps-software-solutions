@@ -8,7 +8,8 @@
 body{
     font-family: var(--content-font);
     font-size: small;
-    width: 80%;
+    width: 100%;
+    max-width:800px;
     margin:auto;
     padding: 20px;
     background-color: #a1bfaf;
