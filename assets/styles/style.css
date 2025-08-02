@@ -7,13 +7,11 @@
 }
 body{
     font-family: var(--content-font);
-    width: 90%;
+    font-size: small;
+    width: 80%;
     margin:auto;
     padding: 20px;
     background-color: #a1bfaf;
-}
-h1,h2,h3{
-    font-family: var(--title-font);
     
 }
 h1{
@@ -29,21 +27,50 @@ div{
 }
 img{
     height: auto;
+    width: 100%;
     max-width: 300px;
+    object-fit: contain;
+    display: block;
 }
 .navbar{
     display: flex;
     margin: auto;
     justify-content: space-evenly;
 }
-.mainSection{
+/* .mainSection{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .mainSection div{
-    /* flex-flow: row; */
+    justify-items: center;
+    
     max-width: 400px;
 }
 .mainSection button{
-    justify-self: center;
+    justify-content: center;
+} */
+/* using grid to have consistent columns where it will fit neatly
+Where grid-container is used, add 2 grid-items to get up to 2 rows of content */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
 }
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-break: break-word;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: medium;
+    }
+}
+
